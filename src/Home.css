@@ -1,0 +1,302 @@
+/* HOME STYLES */
+.home-main {
+   position: relative;
+   background-color: #191919;
+   color: #a9d8d1;
+   width: 100%;
+   font-size: 2rem;
+   z-index: 1;
+}
+
+#home-nav {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   height: 7rem;
+   background-color: #262626;
+   color: #a9d8d1;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   z-index: 2;
+}
+
+#home-nav h1 {
+   font-family: "Finger Paint", cursive;
+   color: #a9d8d1;
+   font-size: 2.6rem;
+   font-weight: 300;
+   margin: 0;
+   padding: 0;
+   cursor: pointer;
+}
+
+.logo-container {
+   width: 92%;
+   display: flex;
+   justify-content: center;
+}
+
+.menu-icon-container {
+   width: 8%;
+   margin-inline-start: 2rem;
+}
+
+.menu-icon-container a {
+   cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+   width: 24px;
+   height: 3px;
+   background-color: #a9d8d1;
+   margin: 4px 0;
+   transition: 0.4s;
+}
+
+.home-drawer {
+   font-family: "Open Sans", sans-serif;
+   position: fixed;
+   left: -100%;
+   top: 0;
+   width: 100%;
+   height: 100vh;
+   padding-block-start: 10rem;
+   background-color: #191919;
+   color: #a9d8d1;
+   transition: left 0.25s ease-out;
+   overflow-y: scroll;
+   scrollbar-width: none;
+   scroll-behavior: smooth;
+   z-index: 2;
+}
+
+.home-drawer:-webkit-scrollbar,
+#poem-container:-webkit-scrollbar {
+   width: 8px;
+}
+
+.home-drawer::-webkit-scrollbar-track,
+#poem-container::-webkit-scrollbar-track {
+   background: #191919;
+}
+
+.home-drawer::-webkit-scrollbar-thumb,
+#poem-container::-webkit-scrollbar-thumb {
+   background-color: #191919;
+   border: 3px solid #191919;
+}
+
+.open-drawer {
+   left: 0;
+}
+
+.opaque {
+   opacity: 0.1;
+}
+
+.home-drawer ul {
+   list-style-type: none;
+   padding: 0 0 5rem 7rem;
+}
+
+.home-drawer li {
+   font-family: "Open Sans", sans-serif;
+   font-size: 2rem;
+   font-weight: 400;
+   line-height: 6.5rem;
+   cursor: pointer;
+}
+
+.close-btn-wrapper {
+   width: 100%;
+   height: 7rem;
+   position: fixed;
+   top: 0;
+   background-color: #262626;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   padding-inline-end: 3.5rem;
+   z-index: 3;
+}
+
+.material-symbols-outlined {
+   font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 48;
+}
+
+.home-drawer a {
+   text-decoration: none;
+   color: #a9d8d1;
+}
+
+/* HOME-BACKGROUND STYLES */
+#home {
+   height: 100%;
+   width: 100%;
+   background-color: #191919;
+   color: #ffd7ae;
+   position: fixed;
+   bottom: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.circle {
+   background-color: #1c1b1b;
+   color: #575e5e;
+   width: 90vw;
+   height: 90vw;
+   border-radius: 45% 1%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: "Finger Paint", cursive;
+   font-size: 17vw;
+   text-align: center;
+   line-height: 10rem;
+}
+
+/* POEM STYLES */
+#poem-container {
+   position: relative;
+   width: 100%;
+   margin-block-start: 13rem;
+   background-color: #191919;
+   color: #ffd7ae;
+   font-family: "Open Sans", sans-serif;
+   font-size: 1.4rem;
+   line-height: 2.8rem;
+   font-weight: 400;
+   word-spacing: 1.5px;
+   overflow-x: scroll;
+   overflow-y: scroll;
+   scrollbar-width: none;
+   scroll-behavior: smooth;
+}
+
+#poem-container header {
+   position: fixed;
+   width: 100%;
+   height: 9%;
+   top: 7rem;
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   background-color: #191919;
+   color: #a9d8d1;
+   margin: 0;
+}
+
+#poem-container header h2 {
+   margin: 0;
+   padding: 1.5rem;
+   font-size: 2.3rem;
+}
+
+#poem-container .stanza-wrapper {
+   width: 100%;
+   padding-inline-start: 1rem;
+   margin-block-start: 3rem;
+}
+
+#poem-container .stanza-wrapper div {
+   margin-block-end: 5rem;
+}
+
+#poem-container footer {
+   color: #cdcbda;
+   text-align: center;
+   font-size: 1.8rem;
+   padding-block-end: 4rem;
+}
+
+/* || RESPONSIVE DESIGN SETTINGS */
+
+@media screen and (min-width: 600px) {
+   #poem-container {
+      width: 75%;
+      margin: 13rem auto;
+   }
+
+   #poem-container header {
+      width: 75%;
+   }
+
+   .home-drawer {
+      width: 65%;
+      background-color: #363636;
+   }
+
+   .close-btn-wrapper {
+      width: 65%;
+      background-color: #4e5351;
+   }
+}
+
+@media screen and (min-width: 800px) {
+   #poem-container {
+      width: 55%;
+      margin: 13rem auto;
+   }
+
+   #poem-container header {
+      width: 55%;
+   }
+}
+
+@media screen and (min-width: 1050px) {
+   #poem-container {
+      width: 43%;
+      margin: 13rem auto;
+   }
+
+   #poem-container header {
+      width: 43%;
+   }
+
+   .home-drawer {
+      width: 40%;
+   }
+
+   .close-btn-wrapper {
+      width: 40%;
+   }
+
+   .circle {
+      width: 70vw;
+      height: 70vw;
+      font-size: 10rem;
+   }
+}
+
+@media screen and (min-width: 1500px) {
+   .menu-icon-container {
+      margin-inline-start: 5rem;
+   }
+
+   #poem-container {
+      width: 30%;
+      margin: 13rem auto;
+   }
+
+   #poem-container header {
+      width: 30%;
+   }
+
+   .home-drawer {
+      width: 22%;
+   }
+
+   .close-btn-wrapper {
+      width: 22%;
+   }
+
+   .circle {
+      width: 70vh;
+      height: 70vh;
+   }
+}

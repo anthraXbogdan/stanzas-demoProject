@@ -1,0 +1,80 @@
+#stanza-editor-main {
+   background-color: #9b9b9b71;
+   color: #000;
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 2rem;
+}
+
+#stanza-editor-wrapper {
+   background-color: #eaf0f6;
+   width: 50%;
+   height: 97%;
+   border-radius: 0.3rem;
+}
+
+#stanza-editor-wrapper h1 {
+   text-align: center;
+   color: #202122;
+   margin: 3rem 0;
+   font-weight: 300;
+   font-size: 3vh;
+   text-align: center;
+}
+
+#stanza-editor-wrapper .stanza-body {
+   margin: 0 7rem;
+   height: 78%;
+}
+
+#stanza-editor-wrapper .stanza-body textarea {
+   width: 100%;
+   height: 100%;
+   border: 1px solid #2021224d;
+   resize: none;
+   padding: 4rem 5rem;
+   font-size: 1.4rem;
+   line-height: 2.6rem;
+   font-weight: 400;
+   word-spacing: 1.5px;
+   background-color: #fefefe;
+   color: #202122;
+}
+
+#stanza-editor-wrapper .stanza-body textarea:focus {
+   outline: none;
+}
+
+#stanza-editor-wrapper .stanza-body textarea::selection {
+   color: #f3f3f3;
+   background-color: #0080de;
+}
+
+.stanza-editor-btn-area {
+   margin: 2.8rem 7rem;
+   display: flex;
+   justify-content: space-between;
+}
+
+.stanza-editor-btn-area button {
+   height: 4.2rem;
+   width: 45%;
+   font-size: 1.8rem;
+   background-color: #4e4e4e;
+}
+
+.stanza-editor-btn-area a {
+   display: inline-block;
+   text-decoration: none;
+   color: #fefefe;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}

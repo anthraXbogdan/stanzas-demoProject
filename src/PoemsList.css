@@ -1,0 +1,85 @@
+#poems-list-main {
+  background-color: #fefefe;
+  color: #000;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 92.9vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+#poems-list-wrapper {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#poems-list {
+  height: 100%;
+  width: 35%;
+  overflow-y: scroll;
+  background-color: #fff;
+  color: #3e3e3e;
+  border-inline-end: 1px solid #b2b2b2;
+  margin: 1rem;
+  padding: 3rem;
+}
+
+#poems-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#poems-list li {
+  margin-block-end: 1rem;
+  margin-inline-start: 0;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+#poems-list li:hover {
+  background-color: #0082de36;
+  cursor: pointer;
+}
+
+#poems-list-selection {
+  height: 40%;
+  width: 60%;
+  background-color: #0082de93;
+  margin: 1rem;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 0.7rem;
+}
+
+.poems-list-selection-wrapper {
+  width: 100%;
+}
+
+#poems-list-selection h2 {
+  margin: 0 0 5rem 0;
+  padding: 0;
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: #3e3e3ed2;
+  text-align: center;
+}
+
+.poems-list-btn-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.poems-list-btn-wrapper button {
+  width: 40%;
+  height: 4.8rem;
+  background-color: #3e3e3ed2;
+}

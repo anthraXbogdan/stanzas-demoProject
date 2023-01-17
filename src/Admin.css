@@ -1,0 +1,303 @@
+/* ADMIN NAVBAR */
+
+#admin-navbar {
+	color: #3e3e3e;
+	background-color: #f4f4f4;
+	height: 7vh;
+	width: 100%;
+	padding: 0 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 2rem;
+	position: fixed;
+	top: 0;
+}
+
+.navbar-logo {
+	display: flex;
+	align-items: center;
+	font-family: "Roboto", sans-serif;
+}
+
+.navbar-logo h1 {
+	font-family: "Finger Paint", cursive;
+	margin: 0;
+	padding: 0 0 0 5rem;
+	font-size: 3.7vh;
+}
+
+.navbar-logo h2 {
+	font-family: "Finger Paint", cursive;
+	margin-inline-start: 1rem;
+	color: #0080de;
+	font-weight: 700;
+	font-size: 1.8vh;
+}
+
+/* Admin Navbar Menu */
+#admin-navbar ul {
+	list-style-type: none;
+	text-align: left;
+	width: 33rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+#admin-navbar li {
+	display: inline-block;
+	font-size: 1.8rem;
+	color: #3e3e3e;
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: 400;
+	cursor: pointer;
+}
+
+.nav-item {
+	border-bottom: 2px solid transparent;
+	padding: 0.5rem 0;
+}
+
+.nav-item:hover {
+	border-block-end: 0.2rem solid #0080de;
+}
+
+.nav-item a {
+	text-decoration: none;
+	font-size: 1.8rem;
+	color: #3e3e3e;
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: 400;
+	cursor: pointer;
+}
+
+.nav-item a.active {
+	color: #0080de;
+}
+
+/* ADMIN POEM EDITOR */
+
+#poem-editor-main {
+	display: flex;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 93vh;
+}
+
+.poem-editor-main-section {
+	background-color: #f3f3f3;
+	height: 93vh;
+	padding: 1vh 1vw;
+	font-size: 1.6rem;
+	display: flex;
+	justify-content: center;
+}
+
+.poem-editor-main-section h2 {
+	text-align: center;
+	color: #5e5e5e;
+	margin: 0 0 2vh 0;
+	font-weight: 300;
+	font-size: 3vh;
+}
+
+.section-widget {
+	width: 100%;
+	height: 91vh;
+}
+
+.stanzas-input {
+	width: 35%;
+	margin: 1px 0.5px 0 0;
+	background-color: #fafafa;
+}
+
+.stanzas-view {
+	width: 65%;
+	margin: 1px 0 0 0.5px;
+	background-color: #f6f6f6;
+}
+
+.title-accent-bar {
+	color: #0080de;
+	font-weight: 700;
+	letter-spacing: 0;
+}
+
+/* Stanzas input */
+
+#stanza-input-head {
+	height: 20%;
+	position: relative;
+}
+
+#stanza-text-label {
+	position: absolute;
+	bottom: 0.3vh;
+	left: 0;
+}
+
+#poem-title-widget {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	margin-block-start: 0.7rem;
+	margin-block-end: 2rem;
+}
+
+#poem-title-label {
+	font-size: 1.6rem;
+}
+
+#poem-title-text {
+	font-size: 1.6rem;
+	margin-inline-end: 1rem;
+	border: 1px solid #b2b2b2;
+	background-color: #fefefe;
+	color: #202122;
+	padding: 0.5rem;
+	width: 70%;
+	height: 3.5rem;
+}
+
+#poem-title-text:focus {
+	outline: none;
+}
+
+.save-btn {
+	width: 30%;
+	height: 3.5rem;
+	background-color: #5e5e5e;
+	color: #fefefe;
+	border: none;
+	font-size: 1.6rem;
+	font-weight: 400;
+}
+
+.save-btn:hover {
+	background-color: #202122;
+}
+
+.save-btn:active {
+	background-color: #f3f3f3;
+}
+
+#stanza-text {
+	width: 100%;
+	height: 70%;
+	border: 1px solid #b2b2b2;
+	resize: none;
+	padding: 2rem 3rem;
+	font-size: 1.45rem;
+	line-height: 2.6rem;
+	font-weight: 400;
+	word-spacing: 1.5px;
+	background-color: #fefefe;
+	color: #202122;
+}
+
+#stanza-text:focus {
+	outline: none;
+}
+
+#stanza-text::selection {
+	color: #f3f3f3;
+	background-color: #0080de;
+}
+
+.save-stanza-btn-area {
+	display: flex;
+	justify-content: flex-end;
+	height: 10%;
+	position: relative;
+}
+
+#save-stanza-btn {
+	width: 50%;
+	position: absolute;
+	top: 1vh;
+	right: 0;
+}
+
+/* Stanzas view */
+
+#stanzas-view-head {
+	height: 10%;
+	position: relative;
+}
+
+#stanza-carousel {
+	display: flex;
+	flex-direction: row-reverse;
+	width: 100%;
+	height: 82%;
+	overflow-x: scroll;
+	border: 1px solid #b2b2b2;
+	background-color: #eaf0f6;
+	padding: 2rem;
+	scroll-behavior: auto;
+}
+
+#stanza-carousel:focus {
+	background-color: #eaf0f6;
+}
+
+#poem-title {
+	margin: 0;
+	position: absolute;
+	left: 0;
+	bottom: 1vh;
+	font-size: 2.5vh;
+	font-weight: 300;
+	color: #4e4e4e;
+}
+
+.poem-name {
+	color: #202122;
+	font-weight: 300;
+}
+
+.stanza {
+	border: 1px solid #b2b2b2;
+	background-color: #fefefe;
+	margin: 0 3rem;
+	min-width: 45rem;
+	flex-shrink: 0;
+	padding: 3rem;
+	overflow-y: scroll;
+	font-size: 1.45rem;
+	line-height: 2.6rem;
+	font-weight: 400;
+	word-spacing: 1.5px;
+}
+
+.stanza-body {
+	cursor: pointer;
+}
+
+.stanza-title {
+	margin: 0;
+	font-size: 3rem;
+	font-weight: 300;
+	color: #3e3e3e;
+}
+
+#save-poem-btn-area {
+	display: flex;
+	height: 8%;
+	padding-top: 1vh;
+	justify-content: flex-end;
+}
+
+#save-poem-btn-area button {
+	height: 4rem;
+	margin-left: 2vw;
+	width: 23rem;
+}
+
+.stanza a {
+	text-decoration: none;
+	color: #202122;
+}

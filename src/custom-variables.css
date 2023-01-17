@@ -1,0 +1,9 @@
+:root {
+	/* Scrollbar colors */
+	--scrollbar-background-color: #fefefe;
+	--scrollbar-thumb-color: #b2b2b2;
+	--scrollbar-stanza-background-color: #fefefe;
+	--scrollbar-stanza-carousel-background-color: #eaf0f6;
+	--scrollbar-stanza-border-color: #fefefe;
+	--scrollbar-stanza-carousel-border-color: #eaf0f6;
+}
