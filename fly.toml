@@ -1,6 +1,6 @@
-# fly.toml file generated for eminescu on 2023-01-15T20:17:20+02:00
+# fly.toml file generated for stanzas on 2023-01-17T17:21:12+02:00
 
-app = "eminescu"
+app = "stanzas"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
